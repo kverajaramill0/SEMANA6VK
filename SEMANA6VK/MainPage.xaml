@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SEMANA6VK.MainPage" NavigationPage.HasNavigationBar="False">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="Ventana de Registro" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="txtCodigo" Placeholder="Ingrese el codigo" Keyboard="Numeric"/>
+            <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre" Keyboard="Text"/>
+                <Entry x:Name="txtApellido" Placeholder="Ingrese el apellido" Keyboard="Text"/>
+                    <Entry x:Name="txtEdad" Placeholder="Ingrese la edad" Keyboard="Numeric"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btnInsertar" Text="Insertar" Clicked="btnInsertar_Clicked" Grid.Column="0" Grid.Row="0"/>
+            <Button x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked" Grid.Column="1" Grid.Row="0"/>
+
+
+        </Grid>
+
+    </StackLayout>
+
+</ContentPage>
