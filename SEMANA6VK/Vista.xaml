@@ -9,14 +9,15 @@
                 HorizontalOptions="CenterAndExpand" />
             <Label x:Name="texto" Text=""/>
             <Button Text="Consultar" x:Name="btnGet" Clicked="btnGet_Clicked"/>
-            <ListView x:Name="MyListView">
+            <Button Text="Ingresar Datos" x:Name="btnInsertar" Clicked="btnInsertar_Clicked"/>
+            <ListView x:Name="MyListView" ItemSelected="MyListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
                                 <Label x:Name="lblnombre" Text="{Binding nombre}"/>
                                 <Label x:Name="lblapellido" Text="{Binding apellido}"/>
-                                
+                                <Label x:Name="lbledad" Text="{Binding edad}"/>
 
                             </StackLayout>
                         </ViewCell>

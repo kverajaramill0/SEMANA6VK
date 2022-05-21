@@ -9,8 +9,8 @@ namespace SEMANA6VK
         public App()
         {
             InitializeComponent();
-
-            MainPage = new Vista();
+            
+            MainPage = new NavigationPage (new MainPage());
         }
 
         protected override void OnStart()
